@@ -1,0 +1,455 @@
+/*eliminate defalt browzer settings*/
+body, html {
+    height: 100%;
+    
+}
+
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+    
+}
+
+/*-----PAGE 1    ------*/
+.page1 {
+    background-image:url(images/sigma_delta.svg);
+    height:100%;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    position:relative;
+    display: block;
+    padding:20px;
+    background-attachment: fixed;
+    background-position: center;
+    z-index="0";
+}
+@media only screen and (max-width: 767px) {
+  .page1 {
+      background-image:url(images/sigma_delta_small.svg);
+  }
+}
+
+
+.sdL {
+    display:block;
+    position: fixed;
+    z-index:1 !important;
+    cursor:pointer;
+    top: 10%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/* The hamburger  */
+.nav {
+    display:block;
+    position: absolute;
+    cursor: pointer;
+    top: 22%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+a svg:hover #line1, svg:hover #line2, svg:hover #line3 { 
+  fill: yellow;
+}
+
+a svg #line1 { 
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 400ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 255, 255); /* Black fallback color */
+    background-color: rgba(0, 255, 255, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 20%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: yellow;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: magenta;
+}
+/* Position the close button (top right corner) */
+.overlay .closeSlider {
+    text-align: center;
+    position:absolute;
+    top: 22%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+} 
+
+/*-----PAGE 2    ------*/
+.page2 {
+    height:100%;
+    width:100%;
+    margin: 0 auto;
+    padding:0;
+    position:relative;
+    display:block;
+    z-index:0;
+    /*------SCROLLING EFFECTS----*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cyan {
+    position: relative;
+	background-color: cyan;
+	height: 31%;
+    color: rgba(255, 255, 255, 0.69);
+    font-size: 8vmin;
+    text-indent: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='white' fill-opacity='0.6'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+.yellow {
+	background-color: yellow;
+	height: 31%;
+    margin: 0;
+    color:rgba(255, 255, 255, 0.61);
+    font-size: 8vmin;
+    text-indent: 10px;
+}
+.magenta {
+	background-color: magenta;
+	height: 31%;
+    margin: 0;
+    color:rgba(255, 255, 255, 0.29);
+    font-size: 8vmin;
+    text-indent: 10px;
+}
+.black {
+	background-color: #000000;
+	height: 7%;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.07);
+    font-size: 8vmin;
+    text-indent: 10px;
+}
+/*---- dtp list style -----*/
+.dtp  {
+	position: absolute;
+	top: 20px;
+	left: 50px;
+    z-index:3;
+}
+.dtp ul li {
+	list-style-type: none;
+	baseline-shift: baseline;
+	line-height: 400%;
+	cursor: pointer;
+}
+/*This is for list highlight*/
+.dtp span {
+  background-color: magenta;
+	box-shadow: 10px 0 0  magenta;
+}
+
+.dtp :hover{
+  -webkit-transform: rotate(7.5deg);
+     -ms-transform: rotate(7.5deg);
+         transform: rotate(7.5deg);
+}
+/*----------SLIDESHOW---------*/
+
+#slideShow > div {
+    position: absolute;
+    top: 130px;
+    right: 20px;
+    bottom: 40px;
+    background-color: rgba(0,0,0,0.5);
+    width: 60%;
+    height: 60%;
+    margin:0 auto;
+    display: block;
+    
+
+}
+
+#slideShow img {
+    display:block;
+    max-width: 95%;
+    max-height: 95%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.textP2 {
+    float:left;
+    display: block;
+    position: absolute;
+    bottom: 4em;
+	left: 5em;
+    text-align: left;
+    z-index:3;
+    color:cyan  ;
+    font-size: 2.5vmin;
+    
+}
+
+/*----- PAGE 3-----*/
+.page3 {
+    height:100%;
+    width:100%;
+    margin: 0 auto;
+    padding:0;
+    position:relative;
+    background-color: magenta;
+    z-index:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='yellow' fill-opacity='0.28' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+#iContainer{
+    display:grid;
+    width: 18%;
+    height: 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5fr 5fr 5fr;
+    grid-gap: 20px;
+    justify-content: center;
+   
+}
+.clickThis{
+    padding: 10px;
+    font-size: 1.1em;
+    text-align: center;
+    background-color: #f400f4;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color:rgba(172, 21, 21, 0.65);
+    font-family: 'Bree Serif', serif;
+    
+   
+    
+}
+.clickThis:hover{
+    color:yellowgreen;
+    background-color: rgba(221, 70, 116, 0.83);
+  -webkit-transform: scale(1.2);  
+      -ms-transform: scale(1.2);  
+          transform: scale(1.2); 
+    transition-duration: 0.8s;
+}
+.clickThis:active{
+    color:yellow;
+}
+
+.clickThis:visited{
+    color:green;
+}
+
+.targetDiv{
+    z-index:90 !important;
+}
+
+#img1 {
+  background-image:url(images/sleeping_beauty.jpg);
+  display:none;
+  position:fixed;
+  height:100vh;
+  width:100vw;
+  background-color: rgba(0,0,0,0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  margin: auto;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+#img2 {
+  background-image:url(images/puss_in_boots.jpg);
+  display:none;
+  position:fixed;
+  height:100vh;
+  width:100vw;
+  background-color: rgba(0,0,0,0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  margin: auto;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+#img3 {
+  background-image:url(images/page1.jpg);
+  display:none;
+  position:fixed;
+  height:100vh;
+  width:100vw;
+  background-color: rgba(0,0,0,0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  margin: auto;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+#img4 {
+  background-image:url(images/apple_madness.JPG);
+  display:none;
+  position:fixed;
+  height:100vh;
+  width:100vw;
+  background-color: rgba(0,0,0,0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  margin: auto;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+#img5 {
+  background-image:url(images/jack&beanstoke.jpg);
+  display:none;
+  position:fixed;
+  height:100vh;
+  width:100vw;
+  background-color: rgba(0,0,0,0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  margin: auto;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+.closebtn {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    font-size: 30px;
+    text-decoration: none;
+    color:aliceblue;
+    z-index=15;
+}
+
+/*-----PAGE 4    ------*/
+.page4 {
+    display: flex;
+    height:100%;
+    width:100%;
+    margin: 0;
+    position:relative;
+    background-color: cyan;
+    padding:10%;
+    z-index: 0;
+}
+
+#inform {
+    font-size: 2.5vmin;
+	text-align: left;
+	baseline-shift: baseline;
+	line-height: 300%;
+	color:#6E5E5F;
+    z-index:5;
+}
+
+#facebook{
+    display:block;
+    position: absolute;
+    z-index:5;
+    right:190px;
+    bottom:100px;
+}
+
+a svg:hover #fb { 
+  fill: #CC3333;
+}
+
+a svg #fb { 
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+#stam {
+    display:block;
+    margin: 0;
+    position:absolute;
+    bottom: 0%;
+    right: 0%;
+    z-index:1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+ 
+}
