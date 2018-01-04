@@ -13,14 +13,26 @@ $(document).ready(function(){
         $("#myNav").css({ width: "0" }, 500);
         });
 });
+
 //----CODE FOR IMAGE SHOW AND HIDE
-$(function(){
+$(document).ready(function() {
 	$(".clickThis").click(function(event) {
         "use strict";
 		event.preventDefault();
+        var img = $("#img"+$(this).attr("target"));
+        
         $(".sdL svg").hide();
-		$("#img"+$(this).attr("target")).show();
-	});
+        img.show();
+        
+         $(window).scroll(function(event){
+            "use strict";
+            event.preventDefault();
+            if(img.is(":visible")) {
+                img.hide();
+                $(".sdL svg").show();
+        }
+    });
+});
 	$(".closebtn").click(function(event) {
         "use strict";
 		event.preventDefault();
@@ -28,6 +40,7 @@ $(function(){
 		$("#img"+$(this).attr("target")).hide();
 	});
 });
+
 //---CODE FOR AUTOMATIC IMAGE SHOW
 $(document).ready(function() {
     "use strict";

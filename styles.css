@@ -10,11 +10,13 @@ html * {
 	margin: 0;
 	box-sizing: border-box;
 	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
-    
 }
+
 a {
     text-decoration:none;
 }
+
+
 /*-----PAGE 1    ------*/
 .page1 {
     background-image:url(images/sigma_delta.svg);
@@ -430,11 +432,11 @@ a svg #line1 {
     display:block;
     position: absolute;
     z-index:5;
-    right:190px;
-    bottom:100px;
+    right:10em;
+    bottom:5em;
 }
 
-a svg:hover #fb { 
+a svg:hover #fb, svg:hover #lnkdn{ 
   fill: #CC3333;
 }
 
