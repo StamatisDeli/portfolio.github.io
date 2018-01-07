@@ -87,10 +87,10 @@
 </g>
     <defs>
     <linearGradient id="1" x1="0%" y1="0%" x2="140%" y2="120%">
-        <stop offset="0%" stop-color="lightblue" stop-opacity=".15">
+        <stop offset="0%" stop-color="lightblue" stop-opacity=".2">
             <animate attributeName="stop-color" values="lightblue;blue;red;red;black;red;red;purple;lightblue" dur="14s" repeatCount="indefinite"></animate>
         </stop>
-        <stop offset="100%" stop-color="lightblue" stop-opacity=".15">
+        <stop offset="100%" stop-color="lightblue" stop-opacity=".2">
             <animate attributeName="stop-color" values="lightblue;orange;purple;purple;black;purple;purple;blue;lightblue" dur="14s" repeatCount="indefinite"></animate>
         <animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s" repeatCount="indefinite"></animate>    
         </stop>
