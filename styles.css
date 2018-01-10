@@ -39,7 +39,7 @@ a {
   }
 }
 
-
+/* The Logo */
 .sdL {
     display:block;
     position: fixed;
@@ -49,7 +49,31 @@ a {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    align-content: center;
+    padding: 0;
+    justify-content: center;
 }
+
+
+a svg:hover #sd1, svg:hover #sd2, svg:hover #sd3 { 
+  fill: yellow;
+}
+
+a svg #sd1 { 
+  transition: 400ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 400ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+a svg:active #gr{
+    -webkit-transform: scale(0.95); 
+    -ms-transform: scale(0.95);  
+    transform: scale(0.95); 
+    align-content: center;
+    
+}
+
 /* The hamburger  */
 .nav {
     display:block;
@@ -65,10 +89,16 @@ a svg:hover #line1, svg:hover #line2, svg:hover #line3 {
   fill: yellow;
 }
 
-a svg #line1 { 
-  transition: 200ms;
+a svg #line1, svg #line2 { 
+  transition: 400ms;
   transition-timing-function: ease-in-out;
   -webkit-transition: 400ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+a svg #line3 { 
+  transition: 1000ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 1000ms;
   -webkit-transition-timing-function: ease-in-out;
 }
 
@@ -444,7 +474,7 @@ a svg:hover #fb, svg:hover #lnkdn{
   fill: #CC3333;
 }
 
-a svg #fb { 
+a svg #fb, svg #lnkdn { 
   transition: 200ms;
   transition-timing-function: ease-in-out;
   -webkit-transition: 200ms;

@@ -1,8 +1,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1366px" height="768px" viewBox="0 0 1366 768" enable-background="new 0 0 1366 768" xml:space="preserve" style="">
-<g stroke="yellow" stroke-width="0.5">
+<g stroke="#ffd800" stroke-width="1">
 	<path fill="url(#1)" d="M254.054-37.292c8.695,8.053,19.797,12.079,33.301,12.079c14.733,0,26.651-4.274,35.757-12.825
 		c9.102-8.546,13.658-19.686,13.658-33.406s-4.296-24.307-12.891-31.764c-8.594-7.458-19.643-11.186-33.147-11.186
-		c-14.733,0-26.703,4.078-35.911,12.228c-9.208,8.157-13.812,19.29-13.812,33.406C241.01-55.831,245.354-45.346,254.054-37.292z" class="itbhpHdJ_0"></path>
+		c-14.733,0-26.703,4.078-35.911,12.228c-9.208,8.157-13.812,19.29-13.812,33.406C241.01-55.831,245.354-45.346,254.054-37.292z" class="CNDbaqQF_0"></path>
 	<path fill="url(#1)" d="M1386.713,293.625c-11.049-0.194-19.489-0.991-25.322-2.384c-5.829-1.388-10.232-3.729-13.196-7.008
 		c-2.969-3.282-4.862-8.001-5.68-14.168c-0.817-6.162-1.024-14.317-0.612-24.458l1.533-124.075
 		c0.202-30.023-8.853-53.04-27.161-69.048c-18.317-16.003-45.886-24.009-82.717-24.009c-40.313,0-82.256,9.646-125.84,28.931
@@ -83,20 +83,18 @@
 		c31.306,0,51.564,3.179,60.772,9.545c1.056,0.73,2.044,1.492,2.979,2.279c-9.344,1.435-18.924,2.859-28.75,4.272L540.973,364.305z
 		 M1257.192,270.66c-11.257,7.56-24.455,11.335-39.595,11.335c-13.303,0-24.813-3.73-34.53-11.185
 		c-9.722-7.458-14.577-19.934-14.577-37.433c0-19.283,6.854-32.909,20.563-40.862c13.707-7.95,36.624-11.931,68.752-11.931
-		L1257.192,270.66z" class="itbhpHdJ_1"></path>
+		L1257.192,270.66z" class="CNDbaqQF_1"></path>
 </g>
     <defs>
     <linearGradient id="1" x1="0%" y1="0%" x2="140%" y2="120%">
-        <stop offset="0%" stop-color="lightblue" stop-opacity=".2">
+        <stop offset="0%" stop-color="lightblue" stop-opacity=".22">
             <animate attributeName="stop-color" values="lightblue;blue;red;red;black;red;red;purple;lightblue" dur="14s" repeatCount="indefinite"></animate>
         </stop>
-        <stop offset="100%" stop-color="lightblue" stop-opacity=".2">
+        <stop offset="100%" stop-color="lightblue" stop-opacity=".22">
             <animate attributeName="stop-color" values="lightblue;orange;purple;purple;black;purple;purple;blue;lightblue" dur="14s" repeatCount="indefinite"></animate>
         <animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s" repeatCount="indefinite"></animate>    
         </stop>
     </linearGradient>
     
-        <stroke>  color="red" stroke="#000000" stroke-miterlimit="10"</stroke>
-        
     </defs>
-<style>.itbhpHdJ_0{stroke-dasharray:295 297;stroke-dashoffset:296;animation:itbhpHdJ_draw_0 6200ms linear 0ms infinite,itbhpHdJ_fade 6200ms linear 0ms infinite;}.itbhpHdJ_1{stroke-dasharray:16134 16136;stroke-dashoffset:16135;animation:itbhpHdJ_draw_1 6200ms linear 0ms infinite,itbhpHdJ_fade 6200ms linear 0ms infinite;}@keyframes itbhpHdJ_draw{100%{stroke-dashoffset:0;}}@keyframes itbhpHdJ_fade{0%{stroke-opacity:1;}98.38709677419355%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes itbhpHdJ_draw_0{16.129032258064516%{stroke-dashoffset: 296}48.38709677419355%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes itbhpHdJ_draw_1{16.129032258064516%{stroke-dashoffset: 16135}48.38709677419355%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>
+<style>.CNDbaqQF_0{stroke-dasharray:295 297;stroke-dashoffset:296;animation:CNDbaqQF_draw_0 6300ms linear 0ms infinite,CNDbaqQF_fade 6300ms linear 0ms infinite;}.CNDbaqQF_1{stroke-dasharray:16134 16136;stroke-dashoffset:16135;animation:CNDbaqQF_draw_1 6300ms linear 0ms infinite,CNDbaqQF_fade 6300ms linear 0ms infinite;}@keyframes CNDbaqQF_draw{100%{stroke-dashoffset:0;}}@keyframes CNDbaqQF_fade{0%{stroke-opacity:1;}93.65079365079364%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes CNDbaqQF_draw_0{12.698412698412698%{stroke-dashoffset: 296}39.15343915343915%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes CNDbaqQF_draw_1{25.92592592592593%{stroke-dashoffset: 16135}52.38095238095239%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>
