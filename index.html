@@ -11,6 +11,9 @@
 <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Signika:600" rel="stylesheet"> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    
 <script src="snap.svg.js"></script>
 <script src="script.js"></script>
     
@@ -26,9 +29,10 @@
 
 <!-------PAGE 1---->
 <div class="page1" id="1">
+   
     <div class="sdL">
         <a href="#1" title="go back">
-            <svg id= "logo" xmlns="http://www.w3.org/2000/svg" width="89.443" height="71.774">
+            <svg class="animated" id= "logo" xmlns="http://www.w3.org/2000/svg" width="89.443" height="71.774">
                 <g id = "gr">
                 <path id="sd1" fill="#C33" d="M59.692 23.774L44.722 0l-14.97 23.774z"/>
                 <path id="sd2" fill="#C33" d="M89.443 71.774l-20.826-33H40.902l20.653 18.312-10.98 14.688z"/>
@@ -41,16 +45,18 @@
     
     <div class="nav">
         <a title="menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="27" id="pressMe">
-                <g fill="#C1272D">
+            <svg id="pressMe" class="animated flipInY" xmlns="http://www.w3.org/2000/svg" width="48" height="27" >
+                <g fill="#C1272D" id="hamburger1">
                 <path id="line1" d="M0 0h48v5H0z"/>
                 <path id="line2" d="M0 11h48v5H0z"/>
                 <path id="line3" d="M0 22h48v5H0z"/>
                 </g>
             </svg>
         </a>
-    </div
-
+    </div>
+   
+</div>
+    
  <!--- The overlay MENU SLIDER ----->
     <div id="myNav" class="overlay">
       <!-- Button to close the overlay navigation -->
@@ -138,7 +144,7 @@
         </a>
     </div>
     
-    <div id="stam"><img src="images/stamatis.svg" width=120%; height="120%" ></div>
+    <div id="stam"><img src="images/stamatis.svg"  ></div>
     
 </div>
 

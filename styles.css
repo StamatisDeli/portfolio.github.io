@@ -1,7 +1,6 @@
 /*eliminate defalt browzer settings*/
 body, html {
     height: 100%;
-    
 }
 
 html,
@@ -11,6 +10,7 @@ html * {
 	box-sizing: border-box;
 	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
 }
+
 
 a {
     text-decoration:none;
@@ -28,16 +28,17 @@ a {
     margin: 0;
     position:relative;
     display: block;
-    padding:20px;
+
     background-attachment: fixed;
     background-position: center;
     z-index="0";
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) and (orientation: portrait){
   .page1 {
       background-image:url(images/sigma_delta_small.svg);
   }
 }
+
 
 /* The Logo */
 .sdL {
@@ -52,6 +53,21 @@ a {
     align-content: center;
     padding: 0;
     justify-content: center;
+   
+}
+
+ @media only screen and (max-width: 767px) and (orientation: landscape){
+    .sdL{
+        top:20%;
+     }
+    .nav {
+        position: fixed;
+        top:80%;
+     }
+     .page1{
+         padding-top:50em;
+     }
+    
 }
 
 
@@ -64,14 +80,6 @@ a svg #sd1 {
   transition-timing-function: ease-in-out;
   -webkit-transition: 400ms;
   -webkit-transition-timing-function: ease-in-out;
-}
-
-a svg:active #gr{
-    -webkit-transform: scale(0.95); 
-    -ms-transform: scale(0.95);  
-    transform: scale(0.95); 
-    align-content: center;
-    
 }
 
 /* The hamburger  */
@@ -101,6 +109,7 @@ a svg #line3 {
   -webkit-transition: 1000ms;
   -webkit-transition-timing-function: ease-in-out;
 }
+
 
  /* The Overlay (background) */
 .overlay {
@@ -454,10 +463,13 @@ a svg #line3 {
 }
 
 #inform {
+    position: absolute;
+    top:20%;
+    left:10%;
     font-size: 2.5vmin;
 	text-align: left;
 	baseline-shift: baseline;
-	line-height: 300%;
+	line-height: 250%;
 	color:#6E5E5F;
     z-index:5;
 }
@@ -470,6 +482,18 @@ a svg #line3 {
     bottom:5em;
 }
 
+@media only screen and (max-width: 767px) {
+  #facebook{
+    display:block;
+    position: absolute;
+      margin-left: auto;
+    margin-right: auto;
+    z-index:5;
+    bottom:5em;
+}
+}
+
+
 a svg:hover #fb, svg:hover #lnkdn{ 
   fill: #CC3333;
 }
@@ -481,9 +505,13 @@ a svg #fb, svg #lnkdn {
   -webkit-transition-timing-function: ease-in-out;
 }
 
+
+
 #stam {
+    max-height:100%;
+    width:auto;
     display:block;
-    margin: 0;
+    margin: 0 auto;
     position:absolute;
     bottom: 0%;
     right: 0%;
@@ -491,4 +519,9 @@ a svg #fb, svg #lnkdn {
     overflow-x: hidden;
     overflow-y: hidden;
  
+}
+
+svg #stam {
+    max-height:100%;
+    width:auto;
 }

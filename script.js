@@ -6,7 +6,7 @@ $(document).ready(function(){
         $("#myNav").css({ width: "100%" }, 500);
         });
     $(".closeSlider").click(function(event){
-            event.preventDefault();
+        event.preventDefault();
         $("#myNav").css({ width: "0%" }, 500);
         });
      $(".overlay-content").click(function(event){
@@ -56,4 +56,14 @@ $(document).ready(function() {
     }, 3000);
 });
 
-//----ANIMATE THE BACK BUTTON------
+//----ANIMATE THE BACK BUTTON------//
+$(document).ready(function() {
+	$("#logo").mousedown(function(event) {
+        "use strict";
+       $(this).addClass("bounceIn");
+    });
+    $("#logo").mouseup(function(event) {
+        "use strict";
+       $(this).removeClass("bounceIn");
+    });
+});
