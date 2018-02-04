@@ -67,19 +67,20 @@ $(document).ready(function() {
        $(this).removeClass("bounceIn");
     });
 });
-
+/*
 //--SNAP TO SCROLL COPYRIGHT: Mi_Creativity----//
 $(document).ready(function() {
     "use strict";
-var sections = $('.snap'),
-  win = $(window),
-  index = 0,
-  isScrolling = false;
-
+    var sections = $('.snap'),
+    win = $(window),
+    index = 0,
+    isScrolling = false;
+    
+    
 win.on('scroll', function() {
   var winTop = win.scrollTop(),
     secTop = $(sections[index]).offset().top;
-
+    
   if (!isScrolling) {
     if (winTop > secTop) {
       isScrolling = true;
@@ -102,3 +103,4 @@ function animateScrolling(secTop) {
   });
 }
 });
+*/
