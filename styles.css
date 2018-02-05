@@ -11,11 +11,9 @@ html * {
 	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
 }
 
-
 a {
     text-decoration:none;
 }
-
 
 /*-----PAGE 1    ------*/
 .page1 {
@@ -169,6 +167,16 @@ a svg #line3 {
         right: 35px;
     }
 } 
+
+.footer {
+    display:inline-block;
+    position:absolute;
+    bottom:2%;
+    right: 2%;
+    margin: 0 auto;
+    
+    
+}
 
 /*-----PAGE 2    ------*/
 .page2 {

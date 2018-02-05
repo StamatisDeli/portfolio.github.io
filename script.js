@@ -67,6 +67,35 @@ $(document).ready(function() {
        $(this).removeClass("bounceIn");
     });
 });
+
+$(document).ready(function() {
+    "use strict";
+    $(".container").height($(window).height());
+    $(".snap").height($(window).height());
+    //$(".snap").snapscroll();
+    
+    
+     $.scrollify({
+    section : ".snap",
+    sectionName : "section-name",
+    interstitialSection : "",
+    easing: "easeOutExpo",
+    scrollSpeed: 1100,
+    offset : 0,
+    scrollbars: true,
+    standardScrollElements: "",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll:true,
+    before:function() {},
+    after:function() {},
+    afterResize:function() {},
+    afterRender:function() {}
+  });
+    
+});  
+    
 /*
 //--SNAP TO SCROLL COPYRIGHT: Mi_Creativity----//
 $(document).ready(function() {
