@@ -1,5 +1,6 @@
 /*eliminate defalt browzer settings*/
-body, html {
+body, 
+html {
     height: 100%;
 }
 
@@ -185,7 +186,8 @@ a svg #line3 {
     margin: 0 auto;
     padding:0;
     position:relative;
-    display:block;
+    display:flex;
+    flex-flow: column;
     z-index:0;
     /*------SCROLLING EFFECTS----*/
     background-attachment: fixed;
@@ -529,7 +531,7 @@ a svg #fb, svg #lnkdn {
  
 }
 
-svg #stam {
+#stam, svg{
     max-height:100%;
     width:auto;
 }

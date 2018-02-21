@@ -66,7 +66,9 @@ $(document).ready(function() {
         "use strict";
        $(this).removeClass("bounceIn");
     });
+    
 });
+
 
 $(document).ready(function() {
     "use strict";
