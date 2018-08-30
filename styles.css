@@ -15,7 +15,15 @@ html * {
 a {
     text-decoration:none;
 }
-
+button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
 /*-----PAGE 1    ------*/
 .page1 {
     background-image:url(images/sigma_delta.svg);
@@ -478,9 +486,12 @@ a svg #line3 {
     font-size: 2.5vmin;
 	text-align: left;
 	baseline-shift: baseline;
-	line-height: 250%;
+	line-height: 180%;
 	color:#6E5E5F;
     z-index:5;
+}
+#inform p{
+
 }
 
 #facebook{
