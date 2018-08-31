@@ -14,10 +14,8 @@
 <link href="https://fonts.googleapis.com/css?family=Signika:600" rel="stylesheet"> 
 <link rel="icon" href="images/sdlogo.ico" >
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-<!--Scripts-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src= "jquery.scrollify.js"></script>
-<script src="script.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
 </head>
 
 <body>
@@ -25,7 +23,7 @@
 <header></header>
 
 <!---PAGE 1-->
-<div class="page1 snap" id="1">
+<div class="page page1 snap" id="1">
    
     <button class="sdL">
         <a href="#1" title="go back">
@@ -52,10 +50,12 @@
         </a>
     </div>
 
- <!--- The overlay MENU SLIDER ----->
+ <!-- The overlay MENU SLIDER -->
     <div id="myNav" class="overlay">
       <!-- Button to close the overlay navigation -->
-      <a href="#c" class="closeSlider">&times;</a>
+      <button>
+        <a href="#c" class="closeSlider">&times;</a>
+      </button>
       <!-- Overlay content -->
       <div class="overlay-content">
         <a href="#3">Illustrations</a>
@@ -64,14 +64,14 @@
       </div>
     </div>
     
-    <div class="footer animated infinite">
+    <div class="footer-p1 animated infinite">
         <p>...you can scroll down if you want!</p>
     </div>
     
 </div>
 
-<!------PAGE 2---->
-<div class="page2 snap" id="2">
+<!-- PAGE 2 -->
+<div class="page page2 snap" id="2">
     <div class="cyan">cyan</div>
     <div class="magenta">magenta</div>
     <div class="yellow">yellow</div>
@@ -104,9 +104,8 @@
     </div>
 </div>
 
-<!-----PAGE 3---->
-<div class="page3 snap" id="3">
-    
+<!-- PAGE 3-->
+<div class="page page3 snap" id="3">
     <div id="iContainer" title="click to view an illustration">
         <div class="clickThis" target="1" id="i1">Sleeping Beauty</div>
         <div class="clickThis" target="2" id="i2">Puss In Boots</div>
@@ -115,46 +114,70 @@
         <div class="clickThis" target="5" id="i5">Jack and the Beanstalk</div>
     </div>
 <!--illustrations containers-->
-	<div id="img1" class="targetDiv"><a href="#" target="1" class="closebtn">&times;</a></div>
-	<div id="img2" class="targetDiv"><a href="#" target="2" class="closebtn">&times;</a></div>
-	<div id="img3" class="targetDiv"><a href="#" target="3" class="closebtn">&times;</a></div>
-	<div id="img4" class="targetDiv"><a href="#" target="4" class="closebtn">&times;</a></div>
-	<div id="img5" class="targetDiv"><a href="#" target="5" class="closebtn">&times;</a></div>
+	<div id="img1" class="targetDiv"><button><a href="#" target="1" class="closebtn">&times;</a></button></div>
+	<div id="img2" class="targetDiv"><button><a href="#" target="2" class="closebtn">&times;</a></button></div>
+	<div id="img3" class="targetDiv"><button><a href="#" target="3" class="closebtn">&times;</a></button></div>
+	<div id="img4" class="targetDiv"><button><a href="#" target="4" class="closebtn">&times;</a></button></div>
+	<div id="img5" class="targetDiv"><button><a href="#" target="5" class="closebtn">&times;</a></button></div>
     
     <div id="pattern3"></div>
 </div>
 
-<!------PAGE 4---->
-<div class="page4 snap" id="4">
-    
-    <div id="inform">
-    <i class="material-icons" style="font-size:40px; color:yellow">fingerprint</i>
-    <p>My name is Stamatis Deliyannis, and I am a Front End Developer.<br>
-        I am dedicated to creating elegant, user friendly apps<br>
-        My background is Graphics Design, so I am an effective Web designer as well<br>
-        I also love design and illustration, and I like learning new things all the time.<br>
-        I have worked with an advertising company, freelance, <br>
-        and I have also been the owner of a plant retail shop, so I do know my garden, too!<br>
-        I live in Athens Greece. <br>
-        Second job is full time dad, and in my spare time I go spearfishing or shoot some hoops, or jog...<br>
-        You can reach me at: stamatis.deliyannis@gmail.com</p>
+<!--PAGE 4-->
+<div class="page page4 snap" id="4">
+    <div class="ornament"></div>
+    <div class="inform">
+        <i class="material-icons" style="font-size:40px; color:yellow">fingerprint</i>
+        <h2 class="nameUnder">sta<br>ma<br>tis</h2>
+        <p>
+            My name is Stamatis Deliyannis, and I am a Front End Developer.<br>
+            I am dedicated to creating elegant, user friendly apps.<br>
+            My background is Graphics Design, so I am an effective Web Designer as well.<br>
+            I also love design and illustration, and I like learning new things all the time.<br>
+            I have worked with an advertising company, freelance, <br>
+            and I have also been the owner of a plant retail shop, so I do know my garden, too!<br>
+            I live in Athens Greece. <br>
+            Second job is full time dad, and in my spare time I go spearfishing or shoot some hoops, or jog...<br>
+            You can reach me at: stamatis.deliyannis@gmail.com
+        </p>
     </div>
-    <div id="facebook">
-        <button>
-            <a href="https://www.facebook.com/stamatis.deliyannis" title="My Facebook Page" target="_blank">
-            <svg  width="50px" height="50px" fill="yellow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path id="fb" d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"/></svg>
-            </a>
-        </button>
-        <button>
-            <a href="https://www.linkedin.com/in/stamatis-deliyannis-8274708a/" title="My LinkeIn Page" target="_blank">
-            <svg width="50px" height="50px" fill="yellow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path id="lnkdn" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-        </button>
-    </div>
+    <!-- SOCIAL MEDIA MENU -->
+    <aside class="container-social">
+        <ul class="list-social">
+            <li class="list">
+                <div class="social-container">
+                    <a href="https://www.facebook.com/stamatis.deliyannis" title="My Facebook Page" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="list">
+                <div class="social-container">
+                    <a href="https://www.linkedin.com/in/stamatis-deliyannis-8274708a/" title="My LinkeIn Page" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="list">
+                <div class="social-container">
+                    <a href="https://github.com/StamatisDeli" title="My GitHub Page" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </aside>
     
     <div id="stam"><img src="images/stamatis.svg"  ></div>
-    
+    <footer>
+            <p>&copy Stamatis Deliyannis 2018</p>
+    </footer>
 </div>
-
+<!--Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src= "jquery.scrollify.js"></script>
+<script src="script.js"></script>
+<!-- FONT AWESOME-->
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </body>
 </html>
