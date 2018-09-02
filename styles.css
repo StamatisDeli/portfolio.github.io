@@ -277,16 +277,24 @@ a svg #line3 {
     transform: translateY(-80%);
     height: 75%;
     width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.project-container {
-    background-color: rgb(80, 68, 47);
+.project-container a{
+    background-color: rgb(0, 0, 0);
     width: 220px;
+    height:auto;
     z-index: 20;
     padding: 0.8rem;
     display: flex;
+    justify-content: flex-end;
     align-content: center;
     flex-direction: column;
+    margin:0.5rem;
+    cursor:pointer;
 }
 
 .web img {
@@ -313,13 +321,16 @@ h3 {
     color: rgb(219, 219, 219);
 }
 
+.tags{
+    height:3rem;
+}
 .web p {
     background: #6A9113;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1f0000, rgb(0, 0, 0));
     background: linear-gradient(to right, #1f0000, rgb(0, 0, 0));
     border: 1px solid rgba(255, 255, 255, 0.281);
-    font-size: .8rem;
+    font-size: .7rem;
     border-radius: 8px;
     width: auto;
     text-align: center;
@@ -547,7 +558,6 @@ h3 {
 }
 
 /*-- PAGE 5 ---*/
-
 .page5 {
     display: flex;
     background-color: rgb(32, 211, 211);
