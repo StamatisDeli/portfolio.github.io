@@ -263,11 +263,50 @@ a svg #line3 {
     background-size: cover;
     z-index: -1;
 }
-
+.dev-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width:100%;
+    height:12%;
+}
 .page2 h1 {
     font-family: 'Courier New', Courier, regular, monospace;
     font-weight: normal;
     color: yellow;
+    width: 30%;
+}
+.dev-github {
+    border-radius: 8px;
+    color:white;
+    font-weight: normal;
+    background-color: black;
+    padding: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+}
+.dev-github h3{
+    text-align: right;
+    font-weight: normal;
+    margin:0 auto;
+    width: auto;
+}
+.dev-social{
+    background-color: white;
+    margin-left:0.5rem;
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+    font-size: 2.24rem;
+    text-align: center;
+    
+    transition: transform .15s ease-in-out;
+    -webkit-transition: transform .20s ease-in-out;
+}
+
+.dev-social .svg-inline--fa {
+    vertical-align: -0.8rem;
+    color: black;
 }
 
 .web {
