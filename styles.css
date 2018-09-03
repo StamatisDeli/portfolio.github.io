@@ -684,7 +684,13 @@ footer p {
     }
 
 }
+@media only screen and (max-width: 620px) and (orientation: landscape) {
 
+    .page2{
+        height:240%;
+    }
+
+}
 /* OVERLAY MENU: When the height of the screen is less than 450 pixels, 
 change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
