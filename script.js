@@ -72,21 +72,21 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     "use strict";
-    $(".container").height($(window).height());
-    $(".snap").height($(window).height());
+    //$(".container").height($(window).height());
+    //$(".snap").height($(window).height());
     //$(".snap").snapscroll();
     
     
      $.scrollify({
     section : ".snap",
-    sectionName : "section-name",
+    //sectionName : "section-name",
     interstitialSection : "",
     easing: "easeOutExpo",
     scrollSpeed: 1100,
     offset : 0,
     scrollbars: true,
     standardScrollElements: "",
-    setHeights: true,
+    setHeights: false,
     overflowScroll: true,
     updateHash: true,
     touchScroll:true,
