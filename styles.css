@@ -278,12 +278,6 @@ a svg #line3 {
     margin-bottom: 0.3rem;
 }
 
-.web 
-h2,
-h3 {
-    /*font-family: 'Courier New', Courier, regular, monospace;*/
-}
-
 .web h2 {
     color: rgb(255, 154, 46);
 }
@@ -323,7 +317,14 @@ h3 {
     flex-direction: column;
     margin: 0.5rem;
     cursor: pointer;
+    transition: transform .15s ease-in-out;
+    -webkit-transition: transform .20s ease-in-out;
 }
+
+.project-container:hover{
+    transform: scale(1.05);
+}
+
 /* PAGE 3 */
 .page3 {
     display: flex;
