@@ -16,7 +16,10 @@ html * {
     box-sizing: border-box;
     font-family: Gotham, Helvetica Neue, Helvetica, Arial, " sans-serif";
 }
-
+h1,h2,h3{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe WPC,Segoe UI,
+    HelveticaNeue-Light,Ubuntu,Droid Sans,sans-serif
+}
 a {
     text-decoration: none;
     color: white;
@@ -216,7 +219,7 @@ a svg #line3 {
 }
 
 .page2 h1 {
-    font-family: 'Courier New', Courier, regular, monospace;
+    /*font-family: 'Courier New', Courier, regular, monospace;*/
     font-weight: normal;
     color: yellow;
     width: 30%;
@@ -268,19 +271,6 @@ a svg #line3 {
     justify-content: space-around;
 }
 
-.project-container a {
-    background-color: rgb(0, 0, 0);
-    width: 220px;
-    z-index: 20;
-    padding: 0.8rem;
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    flex-direction: column;
-    margin: 0.5rem;
-    cursor: pointer;
-}
-
 .web img {
     border-radius: 5px;
     padding: 0.7rem 0.3rem 0.7rem 0.3rem;
@@ -293,7 +283,7 @@ a svg #line3 {
 .web 
 h2,
 h3 {
-    font-family: 'Courier New', Courier, regular, monospace;
+    /*font-family: 'Courier New', Courier, regular, monospace;*/
 }
 
 .web h2 {
@@ -324,7 +314,18 @@ h3 {
     margin: 0.2rem;
     color: white;
 }
-
+.project-container a {
+    background-color: rgb(0, 0, 0);
+    width: 220px;
+    z-index: 20;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-direction: column;
+    margin: 0.5rem;
+    cursor: pointer;
+}
 /* PAGE 3 */
 .page3 {
     display: flex;
@@ -644,7 +645,11 @@ footer p {
     color: rgba(255, 255, 255, 0.596);
     font-size: 0.9rem;
 }
-/* MEDIA QUERIES */
+
+/*
+* MEDIA QUERIES
+*/
+
 @media screen and (max-width: 1200px) {
     .page2{
         height:170%;
@@ -656,12 +661,6 @@ footer p {
     }
     .page2 h1{
         width:40%;
-    }
-}
-
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-    .page1 {
-        background-image: url(images/sigma_delta_small.svg);
     }
 }
 
@@ -682,16 +681,55 @@ footer p {
     .dev-header{
         margin-bottom: 0.5rem;
     }
-
 }
 @media only screen and (max-width: 620px) and (orientation: landscape) {
-
     .page2{
         height:240%;
     }
-
+    .page2 h1{
+        width:100%;
+    }
 }
-/* OVERLAY MENU: When the height of the screen is less than 450 pixels, 
+/*
+*   ORIENTATION PORTRAIT
+*/
+
+@media only screen and (max-width: 620px) and (orientation: portrait) {
+    .page2{
+        height:260%;
+    }
+    .dev-header{
+        flex-direction: column;
+        height:130px;
+        margin-top: 80px;
+        width: 95%;
+        text-align: center;
+    }
+    .page2 h1 {
+        width: 100%;
+        margin: 0;
+    }
+    .dev-github{
+        width: 190px;
+        align-self: center;
+    }
+}
+@media only screen and (max-width: 580px) and (orientation: portrait) {
+    .page2{
+        height:400%;
+    }
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .page1 {
+        background-image: url(images/sigma_delta_small.svg);
+    }
+}
+@media only screen and (max-width: 520px) and (orientation: portrait) {
+    .dev-header{
+        height:160px;
+    }
+}
+/* OVERLAY MENU: When the height screen > 450 pixels, 
 change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
     .overlay a {
@@ -701,16 +739,5 @@ change the font-size of the links and position the close button again, so they d
         font-size: 40px;
         top: 15px;
         right: 35px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    #facebook {
-        display: block;
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        z-index: 5;
-        bottom: 5em;
     }
 }

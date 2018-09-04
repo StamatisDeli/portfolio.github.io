@@ -82,7 +82,7 @@ $(document).ready(function() {
     //sectionName : "section-name",
     interstitialSection : "",
     easing: "easeOutExpo",
-    scrollSpeed: 1100,
+    scrollSpeed: 1300,
     offset : 0,
     scrollbars: true,
     standardScrollElements: "",
