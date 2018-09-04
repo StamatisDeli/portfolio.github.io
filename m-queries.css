@@ -1,0 +1,101 @@
+/*
+* MEDIA QUERIES
+*/
+@media screen and (max-width: 1200px) {
+    .page2 {
+        height: auto;
+    }
+    .web {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .page2 h1 {
+        width: 40%;
+    }
+    .inform p{
+        width: 80%;
+    }
+    footer{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .sdL {
+        /* top: 20%;*/
+    }
+    .nav {
+        position: fixed;
+        /*top: 80%;*/
+    }
+    .page1 {
+        padding-top: 50em;
+    }
+    .dev-header {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .page2 h1 {
+        width: 100%;
+    }
+    .slide-container {
+        width: 90%;
+    }
+    .textP3 {
+        width: 90%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        bottom:1.5rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .dev-header {
+        flex-direction: column;
+        height: 130px;
+        margin-top: 80px;
+        width: 95%;
+        text-align: center;
+    }
+    .page2 h1 {
+        width: 100%;
+        margin: 0;
+    }
+    .dev-github {
+        width: 190px;
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .page1 {
+        background-image: url(images/sigma_delta_small.svg);
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .dev-header {
+        height: 160px;
+    }
+    .social{
+        align-self: flex-end;
+        z-index:5;
+        padding: 4rem;
+    }
+    .social ul{
+        display: flex;
+    }
+    .social li{
+        display: inline;
+        padding-left: 0.5rem;
+    }
+    footer{
+        width: 50%;
+    }
+}
+

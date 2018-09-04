@@ -1,15 +1,13 @@
 /*eliminate defalt browzer settings*/
 
 body,
-html,
-aside {
+html {
     height: 100%;
     width: 100%;
 }
 
 body,
 html,
-aside,
 html * {
     padding: 0;
     margin: 0;
@@ -396,7 +394,7 @@ h3 {
 }
 
 /* SLIDESHOW */
-#slideShow>div {
+.slide-container {
     position: absolute;
     top: 130px;
     right: 20px;
@@ -408,7 +406,7 @@ h3 {
     display: block;
 }
 
-#slideShow img {
+.slide-container img {
     display: block;
     max-width: 95%;
     max-height: 95%;
@@ -432,7 +430,7 @@ h3 {
     font-size: 2.5vmin;
 }
 
-/*----- PAGE 4-----*/
+/*  PAGE 4 */
 .page4 {
     background-color: rgb(207, 0, 207);
     z-index: 0;
@@ -598,15 +596,6 @@ h3 {
     z-index: 0;
 }
 
-.container-social {
-    display: flex;
-    flex-flow: column;
-    right: 0.5rem;
-    top: 0.5rem;
-    width: 3.6rem;
-    z-index: 1;
-}
-
 .social-container {
     background-color: rgb(32, 168, 168);
     width: 3.4rem;
@@ -614,10 +603,8 @@ h3 {
     margin: 0.6rem 0 0.6rem 0;
     border-radius: 50%;
     display: flex;
-    align-content: center;
     justify-content: center;
     font-size: 2.24rem;
-    text-align: center;
     transition: transform .15s ease-in-out;
     -webkit-transition: transform .20s ease-in-out;
 }
@@ -644,100 +631,4 @@ footer {
 footer p {
     color: rgba(255, 255, 255, 0.596);
     font-size: 0.9rem;
-}
-
-/*
-* MEDIA QUERIES
-*/
-
-@media screen and (max-width: 1200px) {
-    .page2{
-        height:170%;
-    }
-}
-@media screen and (max-width: 830px) {
-    .page2{
-        height:240%;
-    }
-    .page2 h1{
-        width:40%;
-    }
-}
-
-@media only screen and (max-width: 767px) and (orientation: landscape) {
-    .sdL {
-       /* top: 20%;*/
-    }
-    .nav {
-        position: fixed;
-        /*top: 80%;*/
-    }
-    .page1 {
-        padding-top: 50em;
-    }
-    .page2{
-        height:240%;
-    }
-    .dev-header{
-        margin-bottom: 0.5rem;
-    }
-}
-@media only screen and (max-width: 620px) and (orientation: landscape) {
-    .page2{
-        height:240%;
-    }
-    .page2 h1{
-        width:100%;
-    }
-}
-/*
-*   ORIENTATION PORTRAIT
-*/
-
-@media only screen and (max-width: 620px) and (orientation: portrait) {
-    .page2{
-        height:260%;
-    }
-    .dev-header{
-        flex-direction: column;
-        height:130px;
-        margin-top: 80px;
-        width: 95%;
-        text-align: center;
-    }
-    .page2 h1 {
-        width: 100%;
-        margin: 0;
-    }
-    .dev-github{
-        width: 190px;
-        align-self: center;
-    }
-}
-@media only screen and (max-width: 580px) and (orientation: portrait) {
-    .page2{
-        height:400%;
-    }
-}
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-    .page1 {
-        background-image: url(images/sigma_delta_small.svg);
-    }
-}
-@media only screen and (max-width: 520px) and (orientation: portrait) {
-    .dev-header{
-        height:160px;
-    }
-}
-/* OVERLAY MENU: When the height screen > 450 pixels, 
-change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
 }

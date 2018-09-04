@@ -8,8 +8,8 @@
     <meta name="description" content="Portfolio Page, Stamatis Deliyannis, Art Director">
     <meta name="keywords" content="portfolio, art director, front end developer">
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="m-queries.css" rel="stylesheet" type="text/css">
     <!--Normalize-->
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Signika:600" rel="stylesheet">
@@ -173,7 +173,7 @@
                 <li><span>Concession Signage</span></li>
             </ul>
         </div>
-        <div id="slideShow">
+        <div class="slide-container" id="slideShow">
             <div><img src="images/apple_madness.JPG" alt="apple underware madness series"></div>
             <div><img src="images/apple_general.JPG" alt="apple underware general ad"></div>
             <div><img src="images/apple_funderwear.JPG" alt="apple underware funderware series"></div>
@@ -223,23 +223,23 @@
             </p>
         </div>
         <!-- SOCIAL MEDIA MENU -->
-        <aside class="container-social">
+        <div class="social">
             <ul class="list-social">
-                <li class="list">
+                <li>
                     <div class="social-container">
                         <a href="https://www.facebook.com/stamatis.deliyannis" title="My Facebook Page" target="_blank" rel="noopener">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </div>
                 </li>
-                <li class="list">
+                <li>
                     <div class="social-container">
                         <a href="https://www.linkedin.com/in/stamatis-deliyannis-8274708a/" title="My LinkeIn Page" target="_blank" rel="noopener">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
                 </li>
-                <li class="list">
+                <li>
                     <div class="social-container">
                         <a href="https://github.com/StamatisDeli" title="My GitHub Page" target="_blank" rel="noopener">
                             <i class="fab fa-github"></i>
@@ -247,7 +247,7 @@
                     </div>
                 </li>
             </ul>
-        </aside>
+        </div>
 
         <div id="stam"><img src="images/stamatis.svg" alt="a monochomatic picture of stamatis"></div>
         <footer>
