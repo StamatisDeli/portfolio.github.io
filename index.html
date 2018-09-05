@@ -21,7 +21,7 @@
 
 <body>
     <!---PAGE 1-->
-    <div class="page page1 snap" id="1">
+    <section class="page page1 snap" id="1">
 
         <div class="sdL">
             <a href="#1" title="go back">
@@ -36,7 +36,7 @@
         </div>
 
         <div class="nav">
-            <a title="menu">
+            <a title="menu" aria-label="menu">
                 <svg id="pressMe" class="animated flipInY" xmlns="http://www.w3.org/2000/svg" width="48" height="27">
                     <g fill="#C1272D" id="hamburger1">
                         <path id="line1" d="M0 0h48v5H0z" />
@@ -51,7 +51,7 @@
         <div id="myNav" class="overlay">
             <!-- Button to close the overlay navigation -->
             <div>
-                <a href="" class="closeSlider">&times;</a>
+                <a href="" class="closeSlider" aria-label="Close">&times;</a>
             </div>
             <!-- Overlay content -->
             <div class="overlay-content">
@@ -66,9 +66,9 @@
             <p>...you can scroll down if you want!</p>
         </div>
 
-    </div>
+    </section>
     <!-- WEB DEVELOPMENT -->
-    <div class="page page2 snap" id="2">
+    <section class="page page2 snap" id="2">
         <header class="dev-header">
             <h1>Front End Web Development</h1>
             <div class="dev-github">
@@ -80,7 +80,7 @@
                 </div>
             </div>
         </header>
-        <section class="web">
+        <div class="web">
             <div class="project-container">
                 <a href="https://stamatisdeli.github.io/Neighborhood-map/" title="Syros Beaches Sonar" target="_blank">
                     <h2>Syros Beaches Sonar</h2>
@@ -151,18 +151,18 @@
                 </a>
             </div>
 
-        </section>
-    </div>
+        </div>
+    </section>
     <!-- PAGE 3 -->
-    <div class="page page3 snap" id="3">
+    <section class="page page3 snap" id="3">
         <div class="cyan">cyan</div>
         <div class="magenta">magenta</div>
         <div class="yellow">yellow</div>
         <div class="black">black</div>
-        <div class="textP3">
+        <aside class="textP3">
             <p>Once upon a time, people used to design things on a computer, and take them to a place called 'print shop'<br>                and
                 actually printed stuff... on paper! With ink! The process was called 'printing'!!!</p>
-        </div>
+        </aside>
         <div class="dtp">
             <ul id="dtpL" title="Just watch the slideshow, ok???">
                 <li><span>DTP Oldies:</span></li>
@@ -186,10 +186,10 @@
             <div><img src="images/marvin_brochure.JPG" alt="marvin jeans brochure"></div>
             <div><img src="images/europlex_cons_sing.JPG" alt="europles consession signage"></div>
         </div>
-    </div>
+    </section>
 
     <!-- PAGE 4-->
-    <div class="page page4 snap" id="4">
+    <section class="page page4 snap" id="4">
         <div id="iContainer" title="click to view an illustration">
             <div class="clickThis" target="1" id="i1">Sleeping Beauty</div>
             <div class="clickThis" target="2" id="i2">Puss In Boots</div>
@@ -198,17 +198,17 @@
             <div class="clickThis" target="5" id="i5">Jack and the Beanstalk</div>
         </div>
         <!--illustrations containers-->
-        <div id="img1" class="targetDiv"><button><a href="#" target="1" class="closebtn">&times;</a></button></div>
-        <div id="img2" class="targetDiv"><button><a href="#" target="2" class="closebtn">&times;</a></button></div>
-        <div id="img3" class="targetDiv"><button><a href="#" target="3" class="closebtn">&times;</a></button></div>
-        <div id="img4" class="targetDiv"><button><a href="#" target="4" class="closebtn">&times;</a></button></div>
-        <div id="img5" class="targetDiv"><button><a href="#" target="5" class="closebtn">&times;</a></button></div>
+        <div id="img1" class="targetDiv"><button><a href="#" target="1" class="closebtn" aria-label="Close">&times;</a></button></div>
+        <div id="img2" class="targetDiv"><button><a href="#" target="2" class="closebtn" aria-label="Close">&times;</a></button></div>
+        <div id="img3" class="targetDiv"><button><a href="#" target="3" class="closebtn" aria-label="Close">&times;</a></button></div>
+        <div id="img4" class="targetDiv"><button><a href="#" target="4" class="closebtn" aria-label="Close">&times;</a></button></div>
+        <div id="img5" class="targetDiv"><button><a href="#" target="5" class="closebtn" aria-label="Close">&times;</a></button></div>
 
         <div id="pattern3"></div>
-    </div>
+    </section>
 
     <!--PAGE 5-->
-    <div class="page page5 snap" id="5">
+    <section class="page page5 snap" id="5">
         <div class="ornament"></div>
         <div class="inform">
             <i class="material-icons" style="font-size:40px; color:yellow">fingerprint</i>
@@ -253,7 +253,7 @@
         <footer>
             <p>&copy; Stamatis Deliyannis 2018</p>
         </footer>
-    </div>
+    </section>
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="jquery.scrollify.js"></script>
