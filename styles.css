@@ -182,7 +182,7 @@ a svg #line3 {
 .animated-text{
     
     position: absolute;
-    display: block;
+    display: none;
     top:50%;
     right: 0%;
     text-align: left;
