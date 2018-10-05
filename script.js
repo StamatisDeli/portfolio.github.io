@@ -2,7 +2,7 @@
 $(document).ready(function () {
     "use strict";
     let speed = 600;
-    $( "#underscore" ).hide();
+    $("#underscore").hide();
     $(".symbol").hide();
     $(".animated-text").hide();
     $(".animated-text").fadeIn(5000);
@@ -12,8 +12,8 @@ $(document).ready(function () {
         $(this).animate({ right: $(window).width() / 3 }, speed);
     });
     $(".symbol").fadeIn(9000);
-  
-    setTimeout(function(){
+
+    setTimeout(function () {
         $('#underscore').show()
         $('#underscore').each(function () {
             var elem = $(this);
@@ -26,6 +26,35 @@ $(document).ready(function () {
             }, 500);
         });
     }, 5000)
+
+    setTimeout(function () {
+        $('#an-concept').css({
+            '-moz-transform': 'rotate(-90deg)',
+            '-webkit-transform': 'rotate(-90deg)',
+            '-o-transform': 'rotate(-90deg)',
+            '-ms-transform': 'rotate(-90deg)',
+            'transform': 'rotate(-90deg)'
+        });
+    }, 6000)
+    setTimeout(function () {
+        $('#an-concept').css({
+            '-moz-transform': 'rotate(-180deg)',
+            '-webkit-transform': 'rotate(-180deg)',
+            '-o-transform': 'rotate(-180deg)',
+            '-ms-transform': 'rotate(-180deg)',
+            'transform': 'rotate(-180deg)'
+        });
+    }, 7000)
+    setTimeout(function () {
+        $('#an-concept').css({
+            '-moz-transform': 'rotate(0deg)',
+            '-webkit-transform': 'rotate(0deg)',
+            '-o-transform': 'rotate(0deg)',
+            '-ms-transform': 'rotate(0deg)',
+            'transform': 'rotate(0deg)'
+        });
+    }, 8000)
+
 })
 
 
