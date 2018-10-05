@@ -182,11 +182,11 @@ a svg #line3 {
 .animated-text{
     
     position: absolute;
-    display: none;
+    display: block;
     top:50%;
     right: 0%;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: rgba(0, 0, 75, 0.568);
 }
 

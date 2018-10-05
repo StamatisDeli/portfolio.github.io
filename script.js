@@ -1,15 +1,15 @@
 //JQUERY
 $(document).ready(function () {
     "use strict";
-    let speed = 600;
+    let speed = 500;
     $("#underscore").hide();
     $(".symbol").hide();
     $(".animated-text").hide();
     $(".animated-text").fadeIn(5000);
 
     $("#an-text li").each(function () {
-        speed *= 2
-        $(this).animate({ right: $(window).width() / 3 }, speed);
+        speed *= 1.5
+        $(this).animate({ right: $(window).width() / 4 }, speed);
     });
     $(".symbol").fadeIn(9000);
 
@@ -38,23 +38,49 @@ $(document).ready(function () {
     }, 6000)
     setTimeout(function () {
         $('#an-concept').css({
-            '-moz-transform': 'rotate(-180deg)',
-            '-webkit-transform': 'rotate(-180deg)',
-            '-o-transform': 'rotate(-180deg)',
-            '-ms-transform': 'rotate(-180deg)',
-            'transform': 'rotate(-180deg)'
-        });
-    }, 7000)
-    setTimeout(function () {
-        $('#an-concept').css({
             '-moz-transform': 'rotate(0deg)',
             '-webkit-transform': 'rotate(0deg)',
             '-o-transform': 'rotate(0deg)',
             '-ms-transform': 'rotate(0deg)',
             'transform': 'rotate(0deg)'
         });
+    }, 7000)
+    setTimeout(function () {
+        $('#an-concept').css({
+            '-moz-transform': 'scale(-1, 1)',
+            '-webkit-transform': 'scale(-1, 1)',
+            '-o-transform': 'scale(-1, 1)',
+            '-ms-transform': 'scale(-1, 1)',
+            'transform': 'scale(-1, 1)',
+        });
+    }, 7000)
+    setTimeout(function () {
+        $('#an-design').css({
+            '-moz-transform': 'scale(-1, 1)',
+            '-webkit-transform': 'scale(-1, 1)',
+            '-o-transform': 'scale(-1, 1)',
+            '-ms-transform': 'scale(-1, 1)',
+            'transform': 'scale(-1, 1)',
+        });
+    }, 7000)
+    setTimeout(function () {
+        $('#an-design').css({
+            '-moz-transform': 'scale(1, 1)',
+            '-webkit-transform': 'scale(1, 1)',
+            '-o-transform': 'scale(1, 1)',
+            '-ms-transform': 'scale(1, 1)',
+            'transform': 'scale(1, 1)',
+        });
     }, 8000)
-
+    setTimeout(function () {
+        $('#an-concept').css({
+            '-moz-transform': 'scale(1, 1)',
+            '-webkit-transform': 'scale(1, 1)',
+            '-o-transform': 'scale(1, 1)',
+            '-ms-transform': 'scale(1, 1)',
+            'transform': 'scale(1, 1)',
+        });
+    }, 8000)
 })
 
 
