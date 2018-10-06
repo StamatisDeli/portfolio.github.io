@@ -1,6 +1,6 @@
 //JQUERY
 //Animating Text
-$(document).ready(function() {
+$(function() {
     "use strict";
     let speed = 500;
     $("#underscore").hide();
@@ -68,60 +68,56 @@ $(document).ready(function() {
         $('#an-code').css({
             'color': 'darkred'
         })
-    },9000)
+    }, 9000)
+
+    //--Calling repeat()
+    setInterval(repeat, 5000)
 })
-
-
 
 //Animate the footer infinitely
 function repeat() {
+    $("#anim-footer").css({
+        'color': 'darkred',
+        '-moz-transform': 'scaleY(-1)',
+        '-webkit-transform': 'scaleY(-1)',
+        '-o-transform': 'scaleY(-1)',
+        '-ms-transform': 'scaleY(-1)',
+        'transform': 'scaleY(-1)',
+        '-moz-transition': 'all 0.2s linear',
+        '-webkit-transition': 'all 0.2s linear',
+        'transition': 'all 0.2s linear'
+    }, 100);
+    setTimeout(function() {
         $("#anim-footer").css({
-            'color':'darkred',
-            '-moz-transform': 'scaleY(-1)',
-            '-webkit-transform': 'scaleY(-1)',
-            '-o-transform': 'scaleY(-1)',
-            '-ms-transform': 'scaleY(-1)',
-            'transform': 'scaleY(-1)',
+            'color': 'black',
+            '-moz-transform': 'scaleY(1)',
+            '-webkit-transform': 'scaleY(1)',
+            '-o-transform': 'scaleY(1)',
+            '-ms-transform': 'scaleY(1)',
+            'transform': 'scaleY(1);',
             '-moz-transition': 'all 0.2s linear',
             '-webkit-transition': 'all 0.2s linear',
             'transition': 'all 0.2s linear'
         }, 100);
-        setTimeout(function(){
-            $("#anim-footer").css({
-                'color':'black',
-                '-moz-transform': 'scaleY(1)',
-                '-webkit-transform': 'scaleY(1)',
-                '-o-transform': 'scaleY(1)',
-                '-ms-transform': 'scaleY(1)',
-                'transform': 'scaleY(1);',
-                '-moz-transition': 'all 0.2s linear',
-                '-webkit-transition': 'all 0.2s linear',
-                'transition': 'all 0.2s linear'
-            }, 100);
-        }, 500);
+    }, 500);
 }
 
-$(document).ready(function(){
-    setInterval(repeat, 5000)
-})
-
-//----CODE FOR MENU SLIDE IN AND OUT
-$(document).ready(function() {
-    "use strict";
-    $("#pressMe").click(function(event) {
-        $("#myNav").css({ width: "100%" }, 500);
+$(function() {
+    //--CODE FOR MENU SLIDE IN AND OUT
+    $(document).ready(function() {
+        "use strict";
+        $("#pressMe").click(function(event) {
+            $("#myNav").css({ width: "100%" }, 500);
+        });
+        $(".closeSlider").click(function(event) {
+            event.preventDefault();
+            $("#myNav").css({ width: "0%" }, 500);
+        });
+        $(".overlay-content").click(function(event) {
+            $("#myNav").css({ width: "0" }, 500);
+        });
     });
-    $(".closeSlider").click(function(event) {
-        event.preventDefault();
-        $("#myNav").css({ width: "0%" }, 500);
-    });
-    $(".overlay-content").click(function(event) {
-        $("#myNav").css({ width: "0" }, 500);
-    });
-});
-
-//----CODE FOR IMAGE SHOW AND HIDE
-$(document).ready(function() {
+    //----CODE FOR IMAGE SHOW AND HIDE
     $(".clickThis").click(function(event) {
         "use strict";
         event.preventDefault();
@@ -139,17 +135,15 @@ $(document).ready(function() {
             }
         });
     });
+    //--Close button fucntionality
     $(".closebtn").click(function(event) {
         "use strict";
         event.preventDefault();
         $(".sdL svg").show();
         $("#img" + $(this).attr("target")).hide();
     });
-});
 
-//---CODE FOR AUTOMATIC IMAGE SHOW
-$(document).ready(function() {
-    "use strict";
+    //---CODE FOR AUTOMATIC IMAGE SHOW
     $("#slideShow > div:gt(0)").hide();
     setInterval(function() {
         "use strict";
@@ -160,10 +154,8 @@ $(document).ready(function() {
             .end()
             .appendTo("#slideShow");
     }, 3000);
-});
 
-//----ANIMATE THE BACK BUTTON------//
-$(document).ready(function() {
+    //----ANIMATE THE BACK BUTTON------//
     $("#logo").mousedown(function(event) {
         "use strict";
         $(this).addClass("bounceIn");
@@ -173,15 +165,10 @@ $(document).ready(function() {
         $(this).removeClass("bounceIn");
     });
 
-});
-
-
-$(document).ready(function() {
-    "use strict";
+    //--SCROLLIFY--//
     //$(".container").height($(window).height());
     //$(".snap").height($(window).height());
     //$(".snap").snapscroll();
-
 
     $.scrollify({
         section: ".snap",
@@ -201,8 +188,7 @@ $(document).ready(function() {
         afterResize: function() { },
         afterRender: function() { }
     });
-
-});
+})
 
 /*
 //--SNAP TO SCROLL COPYRIGHT: Mi_Creativity----//
@@ -212,7 +198,6 @@ $(document).ready(function() {
     win = $(window),
     index = 0,
     isScrolling = false;
-    
     
 win.on('scroll', function() {
   var winTop = win.scrollTop(),
