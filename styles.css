@@ -179,14 +179,17 @@ a svg #line3 {
     margin: 0 auto;
 }
 
+.footer-p1 p {
+    display: inline-block;
+}
+
 .animated-text{
-    
     position: absolute;
     display: none;
     top:50%;
     right: 0%;
     text-align: left;
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: rgba(0, 0, 75, 0.568);
 }
 
@@ -196,9 +199,7 @@ a svg #line3 {
     font-family: -apple-system,BlinkMacSystemFont,Segoe WPC,Segoe UI,
     HelveticaNeue-Light,Ubuntu,Droid Sans,sans-serif;
 }
-#blink{
-    display:none;
-}
+
 /* PAGE 2 */
 .page2 {
     background-color: rgb(34, 34, 34);

@@ -1,5 +1,6 @@
 //JQUERY
-$(document).ready(function () {
+//Animating Text
+$(document).ready(function() {
     "use strict";
     let speed = 500;
     $("#underscore").hide();
@@ -7,17 +8,17 @@ $(document).ready(function () {
     $(".animated-text").hide();
     $(".animated-text").fadeIn(5000);
 
-    $("#an-text li").each(function () {
+    $("#an-text li").each(function() {
         speed *= 1.5
         $(this).animate({ right: $(window).width() / 4 }, speed);
     });
     $(".symbol").fadeIn(9000);
 
-    setTimeout(function () {
+    setTimeout(function() {
         $('#underscore').show()
-        $('#underscore').each(function () {
+        $('#underscore').each(function() {
             var elem = $(this);
-            setInterval(function () {
+            setInterval(function() {
                 if (elem.css('visibility') == 'hidden') {
                     elem.css('visibility', 'visible');
                 } else {
@@ -27,25 +28,7 @@ $(document).ready(function () {
         });
     }, 5000)
 
-    setTimeout(function () {
-        $('#an-concept').css({
-            '-moz-transform': 'rotate(-90deg)',
-            '-webkit-transform': 'rotate(-90deg)',
-            '-o-transform': 'rotate(-90deg)',
-            '-ms-transform': 'rotate(-90deg)',
-            'transform': 'rotate(-90deg)'
-        });
-    }, 6000)
-    setTimeout(function () {
-        $('#an-concept').css({
-            '-moz-transform': 'rotate(0deg)',
-            '-webkit-transform': 'rotate(0deg)',
-            '-o-transform': 'rotate(0deg)',
-            '-ms-transform': 'rotate(0deg)',
-            'transform': 'rotate(0deg)'
-        });
-    }, 7000)
-    setTimeout(function () {
+    setTimeout(function() {
         $('#an-concept').css({
             '-moz-transform': 'scale(-1, 1)',
             '-webkit-transform': 'scale(-1, 1)',
@@ -54,25 +37,7 @@ $(document).ready(function () {
             'transform': 'scale(-1, 1)',
         });
     }, 7000)
-    setTimeout(function () {
-        $('#an-design').css({
-            '-moz-transform': 'scale(-1, 1)',
-            '-webkit-transform': 'scale(-1, 1)',
-            '-o-transform': 'scale(-1, 1)',
-            '-ms-transform': 'scale(-1, 1)',
-            'transform': 'scale(-1, 1)',
-        });
-    }, 7000)
-    setTimeout(function () {
-        $('#an-design').css({
-            '-moz-transform': 'scale(1, 1)',
-            '-webkit-transform': 'scale(1, 1)',
-            '-o-transform': 'scale(1, 1)',
-            '-ms-transform': 'scale(1, 1)',
-            'transform': 'scale(1, 1)',
-        });
-    }, 8000)
-    setTimeout(function () {
+    setTimeout(function() {
         $('#an-concept').css({
             '-moz-transform': 'scale(1, 1)',
             '-webkit-transform': 'scale(1, 1)',
@@ -81,28 +46,83 @@ $(document).ready(function () {
             'transform': 'scale(1, 1)',
         });
     }, 8000)
+    setTimeout(function() {
+        $('#an-design').css({
+            '-moz-transform': 'scale(-1, 1)',
+            '-webkit-transform': 'scale(-1, 1)',
+            '-o-transform': 'scale(-1, 1)',
+            '-ms-transform': 'scale(-1, 1)',
+            'transform': 'scale(-1, 1)',
+        });
+    }, 8000)
+    setTimeout(function() {
+        $('#an-design').css({
+            '-moz-transform': 'scale(1, 1)',
+            '-webkit-transform': 'scale(1, 1)',
+            '-o-transform': 'scale(1, 1)',
+            '-ms-transform': 'scale(1, 1)',
+            'transform': 'scale(1, 1)',
+        });
+    }, 9000)
+    setTimeout(function() {
+        $('#an-code').css({
+            'color': 'darkred'
+        })
+    },9000)
 })
 
 
 
+//Animate the footer infinitely
+function repeat() {
+        $("#anim-footer").css({
+            'color':'darkred',
+            '-moz-transform': 'scaleY(-1)',
+            '-webkit-transform': 'scaleY(-1)',
+            '-o-transform': 'scaleY(-1)',
+            '-ms-transform': 'scaleY(-1)',
+            'transform': 'scaleY(-1)',
+            '-moz-transition': 'all 0.2s linear',
+            '-webkit-transition': 'all 0.2s linear',
+            'transition': 'all 0.2s linear'
+        }, 100);
+        setTimeout(function(){
+            $("#anim-footer").css({
+                'color':'black',
+                '-moz-transform': 'scaleY(1)',
+                '-webkit-transform': 'scaleY(1)',
+                '-o-transform': 'scaleY(1)',
+                '-ms-transform': 'scaleY(1)',
+                'transform': 'scaleY(1);',
+                '-moz-transition': 'all 0.2s linear',
+                '-webkit-transition': 'all 0.2s linear',
+                'transition': 'all 0.2s linear'
+            }, 100);
+        }, 500);
+}
+
+$(document).ready(function(){
+    setInterval(repeat, 5000)
+})
+
 //----CODE FOR MENU SLIDE IN AND OUT
-$(document).ready(function () {
+$(document).ready(function() {
     "use strict";
-    $("#pressMe").click(function (event) {
+    $("#pressMe").click(function(event) {
         $("#myNav").css({ width: "100%" }, 500);
     });
-    $(".closeSlider").click(function (event) {
+    $(".closeSlider").click(function(event) {
         event.preventDefault();
         $("#myNav").css({ width: "0%" }, 500);
     });
-    $(".overlay-content").click(function (event) {
+    $(".overlay-content").click(function(event) {
         $("#myNav").css({ width: "0" }, 500);
     });
 });
 
 //----CODE FOR IMAGE SHOW AND HIDE
-$(document).ready(function () {
-    $(".clickThis").click(function (event) {
+$(document).ready(function() {
+    $(".clickThis").click(function(event) {
         "use strict";
         event.preventDefault();
         var img = $("#img" + $(this).attr("target"));
@@ -110,7 +130,7 @@ $(document).ready(function () {
         $(".sdL svg").hide();
         img.show();
 
-        $(window).scroll(function (event) {
+        $(window).scroll(function(event) {
             "use strict";
             event.preventDefault();
             if (img.is(":visible")) {
@@ -119,7 +139,7 @@ $(document).ready(function () {
             }
         });
     });
-    $(".closebtn").click(function (event) {
+    $(".closebtn").click(function(event) {
         "use strict";
         event.preventDefault();
         $(".sdL svg").show();
@@ -128,10 +148,10 @@ $(document).ready(function () {
 });
 
 //---CODE FOR AUTOMATIC IMAGE SHOW
-$(document).ready(function () {
+$(document).ready(function() {
     "use strict";
     $("#slideShow > div:gt(0)").hide();
-    setInterval(function () {
+    setInterval(function() {
         "use strict";
         $("#slideShow > div:first")
             .fadeOut(1000)
@@ -143,12 +163,12 @@ $(document).ready(function () {
 });
 
 //----ANIMATE THE BACK BUTTON------//
-$(document).ready(function () {
-    $("#logo").mousedown(function (event) {
+$(document).ready(function() {
+    $("#logo").mousedown(function(event) {
         "use strict";
         $(this).addClass("bounceIn");
     });
-    $("#logo").mouseup(function (event) {
+    $("#logo").mouseup(function(event) {
         "use strict";
         $(this).removeClass("bounceIn");
     });
@@ -156,7 +176,7 @@ $(document).ready(function () {
 });
 
 
-$(document).ready(function () {
+$(document).ready(function() {
     "use strict";
     //$(".container").height($(window).height());
     //$(".snap").height($(window).height());
@@ -176,10 +196,10 @@ $(document).ready(function () {
         overflowScroll: true,
         updateHash: true,
         touchScroll: true,
-        before: function () { },
-        after: function () { },
-        afterResize: function () { },
-        afterRender: function () { }
+        before: function() { },
+        after: function() { },
+        afterResize: function() { },
+        afterRender: function() { }
     });
 
 });
