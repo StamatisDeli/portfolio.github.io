@@ -70,7 +70,6 @@ $(function () {
         })
     }, 9000)
 
-    //--Calling several functions
     setInterval(repeat, 5000)
 })
 
@@ -151,7 +150,7 @@ $(function () {
     setTimeout(function(){
         convertLetters("#an-code")
         animate("#an-code p")
-    }, 5000)
+    }, 9000)
 
 })
 
