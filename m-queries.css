@@ -24,9 +24,6 @@
 }
 
 @media only screen and (max-width: 767px) and (orientation: landscape) {
-    .sdL {
-        /* top: 20%;*/
-    }
     .nav {
         position: fixed;
         /*top: 80%;*/
@@ -99,7 +96,7 @@
     .social {
         align-self: flex-end;
         z-index: 5;
-        padding: 4rem;
+        padding: 3.5rem;
     }
     .social ul {
         display: flex;
@@ -112,8 +109,12 @@
         width: 50%;
     }
 }
-@media only screen and (max-width: 520px) {
-    .animated-text{
-        
+
+@media only screen and (max-width: 320px) {
+    .social {
+        padding: 0 0 3rem 0 ;
+    }
+    .nameUnder {
+        font-size: 12vh;
     }
 }
