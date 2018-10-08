@@ -77,7 +77,21 @@
         background-image: url(images/sigma_delta_small.svg);
     }
 }
-
+@media only screen and (max-width: 600px) {
+    .animated-text li{
+        display: block;
+    }
+    .small-screen {
+        display: inline-block !important;
+    }
+    .small-screen-1 {
+        margin-bottom: -3.5rem;
+    }
+    #underscore {
+        float:left;
+        margin-left: 6rem;
+    }
+}
 @media only screen and (max-width: 520px) {
     .dev-header {
         height: 160px;
@@ -96,5 +110,10 @@
     }
     footer {
         width: 50%;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .animated-text{
+        
     }
 }

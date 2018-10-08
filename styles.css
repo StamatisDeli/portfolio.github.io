@@ -199,9 +199,11 @@ a svg #line3 {
     font-family: -apple-system,BlinkMacSystemFont,Segoe WPC,Segoe UI,
     HelveticaNeue-Light,Ubuntu,Droid Sans,sans-serif;
 }
-#an-code p{
+
+#an-code p {
     display:inline-block;
 }
+
 /* PAGE 2 */
 .page2 {
     background-color: rgb(34, 34, 34);
