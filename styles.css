@@ -209,6 +209,7 @@ a svg #line3 {
     background-color: rgb(34, 34, 34);
     padding: 2rem;
     z-index: 0;
+    height: auto;
     overflow: hidden;
 }
 
